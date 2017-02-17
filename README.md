@@ -1,4 +1,4 @@
-# Lab 3 - *Name of App Here*
+# Lab 3 - *GitHub Repo Finder*
 
 **GitHubRepoFinder** is a GitHub Repo search app using the [GitHub API](https://developer.github.com/v3/search/#search-repositories).
 
