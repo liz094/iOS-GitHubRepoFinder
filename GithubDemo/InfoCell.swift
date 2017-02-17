@@ -10,6 +10,8 @@ import UIKit
 
 class InfoCell: UITableViewCell {
 
+    @IBOutlet weak var starLabel: UILabel!
+    @IBOutlet weak var forkLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var forkImageView: UIImageView!
     @IBOutlet weak var starImageView: UIImageView!
@@ -25,11 +27,15 @@ class InfoCell: UITableViewCell {
         didSet{
             nameLabel.text = repo.name
             ownerLabel.text = repo.ownerHandle
-            descriptionLabel.text = repo.description
+            descriptionLabel.text = repo.repoDescription
             let urlString = repo.ownerAvatarURL
             let url = URL(string: urlString!)
             
             self.avatarImageView.setImageWith(url!)
+            forkLabel.text = "\(repo.forks)"
+            starLabel.text = "\(repo.stars)"
+            
+            
             
             
             
