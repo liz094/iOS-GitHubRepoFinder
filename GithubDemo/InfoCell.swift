@@ -32,8 +32,8 @@ class InfoCell: UITableViewCell {
             let url = URL(string: urlString!)
             
             self.avatarImageView.setImageWith(url!)
-            forkLabel.text = "\(repo.forks)"
-            starLabel.text = "\(repo.stars)"
+            forkLabel.text = "\(repo.forks!)"
+            starLabel.text = "\(repo.stars!)"
             
             
             
